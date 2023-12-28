@@ -48,8 +48,6 @@ export function SwitchToClassicShortcodeButton( {
 		},
 	};
 
-	console.log( { incompatibleExtensions, incompatibleExtensionsCount } );
-
 	const switchButtonLabel =
 		block === 'woocommerce/cart'
 			? __( 'Switch to classic cart', 'woocommerce' )
