@@ -990,9 +990,7 @@ function wc_get_price_including_tax( $product, $args = array() ) {
 	$price = '' !== $args['price'] ? max( 0.0, (float) $args['price'] ) : (float) $product->get_price();
 	$qty   = '' !== $args['qty'] ? max( 0.0, (float) $args['qty'] ) : 1;
 
-	if ( '' === $price ) {
-		return '';
-	} elseif ( empty( $qty ) ) {
+	if ( empty( $qty ) ) {
 		return 0.0;
 	}
 
@@ -1079,9 +1077,7 @@ function wc_get_price_excluding_tax( $product, $args = array() ) {
 	$price = '' !== $args['price'] ? max( 0.0, (float) $args['price'] ) : (float) $product->get_price();
 	$qty   = '' !== $args['qty'] ? max( 0.0, (float) $args['qty'] ) : 1;
 
-	if ( '' === $price ) {
-		return '';
-	} elseif ( empty( $qty ) ) {
+	if ( empty( $qty ) ) {
 		return 0.0;
 	}
 
